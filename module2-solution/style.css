@@ -3,85 +3,102 @@
   margin: 0;
   padding: 0;
 }
-.container{
-    width: 100%;
+.container {
+  width: 100%;
+  /* margin: 10px; */
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  margin: 12px 0 30px 0;
 }
 
-.chickenHeading{
-   text-align: right;
-   border: 1px solid black;
-   width: 15px;
+.col-lg-6 {
+  background-color: aquamarine;
+  margin: 5px 0;
+  padding: 5px 12px;
+  /* width: 32%; */
+  float: left;
+  text-align: justify;
+  border: 2px solid black;
 }
-p{
-   margin-right: auto;
-   margin-left: auto;
-   width: 90%;
-   /* height: 180px; */
+.chickenDiv, .sushiDiv, .beefDiv {
+  background-color: bisque;
+  border: 2px solid black;
+  color: black;
+  width: 100px;
+  text-align: center;
+  float: right;
 }
+/* ......................Media Quries working................................ */
 
 @media (min-width: 992px) {
   .chicken,
   .beef,
   .sushi {
     float: left;
-    border: 3px solid Green;
-    margin: 5px;
+    border: 3px solid black;
+    background-color: rgb(69, 65, 65);
+    color: white;
+    margin: 6px;
     padding: 10px;
-    
-    
   }
- .chicken{
-    width: 33.32%;
- }
- .beef{
-    width: 33.33%;
- }
- .sushi{
-    width: 33.33%;
- }
+
+  .chicken {
+    width: 32%;
+  }
+  .beef {
+    width: 32%;
+  }
+  .sushi {
+    width: 32%;
+  }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .chicken,
   .beef,
   .sushi {
     float: left;
-    border: 3px solid cyan;
-    margin: 10px;
-    
+    border: 3px solid black;
+    background-color: rgb(69, 65, 65);
+    color: white;
+    margin: 5px;
+    padding: 10px;
   }
-  #chickenId{
-    width: 45%;
- }
- #beefId{
-    width: 45%;
- }
- #sushiId{
-    width: 67%;
-    margin-top: 10px;
- }
+  .chicken {
+    width: 48.5%;
+  }
+  .beef {
+    width: 48.5%;
+  }
+  .sushi {
+    width: 98%;
+  }
 }
-
 @media (min-width: 50px) and (max-width: 767px) {
   .chicken,
   .beef,
   .sushi {
+    float: left;
     border: 3px solid black;
+    background-color: rgb(69, 65, 65);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
     margin: 5px;
-    
+    padding: 10px;
+    text-align: justify;
   }
-  #chickenId-2{
-    width: 90%;
- }
- #beefId-2{
-    width: 90%;
- }
- #sushiId-2{
-    width: 90%;
-    margin-top: 10px;
- }
+ 
+  .chicken {
+    width: 99%;
+  }
+  .beef {
+    width: 99%;
+  }
+  .sushi {
+    width: 99%;
+  }
 }
-
-
-
-
-
